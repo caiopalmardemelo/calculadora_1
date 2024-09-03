@@ -1,20 +1,22 @@
-alert("oioi ola");
-
 function calculadora(opera) {
-    let num1 = parseFloat.getElementById('iem').value;
-    let num2 = parseFloat.getElementById('idem').value;
-    document.getElementById('resultado')textContent = resultado
+    let pons = parseFloat(document.getElementById('iem').value);
+    let pins = parseFloat(document.getElementById('idem').value);
+    let asnw = 0;
 
-    if(isNaN(num1) || isNaN(num2))
-        alert('-')
-}
+    if(isNaN(pons) || isNaN(pins)){
+        alert('Hello Kitty não gostou disso!');
+    }else{
 
-if (opera == '+'){
-    resultado = num1+num2;
-}else if (opera == '-'){
-    resultado = num1-num2;
-}else if (opera == '*'){
-    resultado = num1*num2;
-}else if (opera == '/'){
-    resultado = num1/num2;
+        if (opera == '+'){
+            asnw = pons + pins;
+        }else if (opera == '-'){
+            asnw = pons - pins;
+        }else if (opera == '*'){
+            asnw = pons * pins;
+        }else if (opera == '/'){
+            asnw = pons / pins;
+        }
+        document.getElementById('rslt').textContent = 'Resultado:' + asnw;
+
+    }
 }

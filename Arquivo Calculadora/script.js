@@ -4,7 +4,7 @@ function calculadora(opera) {
     let asnw = 0;
 
     if(isNaN(pons) || isNaN(pins)){
-        alert('Hello Kitty não gostou disso!');
+        alert('hello kitty');
     }else{
 
         if (opera == '+'){
@@ -15,6 +15,10 @@ function calculadora(opera) {
             asnw = pons * pins;
         }else if (opera == '/'){
             asnw = pons / pins;
+        }else if (opera == '%'){
+            asnw = pons / 100 * pins;        
+        }else if (opera == '^'){
+            asnw = pons ** pins;
         }
         document.getElementById('rslt').textContent = 'Resultado:' + asnw;
 

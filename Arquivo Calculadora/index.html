@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora! da Hello Kitty</title>
+    <title>Calculadora!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="script.js"></script>
     <input type="text" id="iem" placeholder="Primeiro número">
+    <br><br>
     <input type="text" id="idem" placeholder="Segundo número">
+    <br><br>
     <button onclick="calculadora('+')">+</button>
     <button onclick="calculadora('-')">-</button>
     <button onclick="calculadora('*')">*</button>
     <button onclick="calculadora('/')">/</button>
-    <br>
-    <span id="rslt"></span>
+    <button onclick="calculadora('%')">%</button>
+    <button onclick="calculadora('^')">^</button>
+    <br><br>
+    <span id="rslt">Resultado:</span>
+    <img src="animated-hello-kitty.gif">
 </body>
 </html>
